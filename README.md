@@ -1,15 +1,25 @@
-# M329 Themen Input
+# M329 Themen Input <!-- omit in toc -->
 
+- [1. Interfaces](#1-interfaces)
+  - [1.1. Theoretische Erläuterung](#11-theoretische-erläuterung)
+  - [1.2. Beispiel](#12-beispiel)
+- [2. Abstrakte Klassen](#2-abstrakte-klassen)
+  - [2.1. Theoretische Erläuterung](#21-theoretische-erläuterung)
+  - [2.2. Beispiel](#22-beispiel)
+- [3. Interfaces vs Abstrakte Klassen](#3-interfaces-vs-abstrakte-klassen)
+  - [3.1. Theoretische Erläuterung](#31-theoretische-erläuterung)
+  - [3.2. Beispiel](#32-beispiel)
+- [4. Delegation (nicht das Schlüsselwort)](#4-delegation-nicht-das-schlüsselwort)
+  - [4.1. Theoretische Erläuterung](#41-theoretische-erläuterung)
+  - [4.2. Beispiel in Visual Studio](#42-beispiel-in-visual-studio)
 
+# 1. Interfaces
 
-
-# Interfaces
-
-## Theoretische Erläuterung
+## 1.1. Theoretische Erläuterung
 
 In C# ermöglichen Interfaces die Definition von Verträgen für Klassen, ohne eine Implementierung anzugeben. Sie werden verwendet, um die Signatur von Methoden, Eigenschaften oder Ereignissen zu definieren, die eine Klasse implementieren muss.
 
-## Beispiel
+## 1.2. Beispiel
 
 ```csharp
 public interface ITier {
@@ -38,13 +48,13 @@ public class Hund : ITier {
 }
 ```
 
-# Abstrakte Klassen
+# 2. Abstrakte Klassen
 
-## Theoretische Erläuterung
+## 2.1. Theoretische Erläuterung
 
 Abstrakte Klassen in C# dienen als Basis für andere Klassen und können nicht instanziiert werden. Sie können sowohl abstrakte als auch konkrete Methoden enthalten. Abstrakte Methoden müssen in den abgeleiteten Klassen implementiert werden.
 
-## Beispiel
+## 2.2. Beispiel
 
 ```csharp
 public abstract class Tier {
@@ -85,9 +95,9 @@ public class Hund : Tier, ITier {
 }
 ```
 
-# Interfaces vs Abstrakte Klassen
+# 3. Interfaces vs Abstrakte Klassen
 
-## Theoretische Erläuterung
+## 3.1. Theoretische Erläuterung
 
 - **Interfaces**:
   - Können keine Implementierungsdetails enthalten.
@@ -97,7 +107,7 @@ public class Hund : Tier, ITier {
   - Können sowohl abstrakte als auch konkrete Methoden enthalten.
   - Eine Klasse kann nur von einer abstrakten Klasse erben.
 
-## Beispiel
+## 3.2. Beispiel
 
 ```csharp
 public abstract class Tier {
@@ -139,11 +149,11 @@ public class Hund : Tier, IStreichelbar
 }
 ```
 
-# Delegation (nicht das Schlüsselwort)
+# 4. Delegation (nicht das Schlüsselwort)
 
-## Theoretische Erläuterung
+## 4.1. Theoretische Erläuterung
 
 Delegation ist ein Designprinzip, bei dem ein Objekt Operationen an ein anderes Objekt delegiert, anstatt sie selbst zu implementieren. Dies fördert die Code-Wiederverwendung und die Trennung von Belangen
 
-## Beispiel in Visual Studio
+## 4.2. Beispiel in Visual Studio
  ---->
