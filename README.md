@@ -1,4 +1,4 @@
-# M329 Themen Input <!-- omit in toc -->
+# M320 Themen Input <!-- omit in toc -->
 
 - [1. Interfaces](#1-interfaces)
   - [1.1. Theoretische Erläuterung](#11-theoretische-erläuterung)
@@ -105,7 +105,7 @@ public class Hund : Tier, ITier {
 
 - **Abstrakte Klassen**:
   - Können sowohl abstrakte als auch konkrete Methoden enthalten.
-  - Eine Klasse kann nur von einer abstrakten Klasse erben.
+  - Eine Klasse kann nur von einer einzigen anderen Klasse erben
 
 ## 3.2. Beispiel
 

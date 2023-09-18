@@ -18,11 +18,20 @@ namespace DelegationDesignPattern.Managers
         private readonly Dictionary<PrinterType, IPrinterHandler> _printerHandlers = 
             new Dictionary<PrinterType, IPrinterHandler>();
 
+        /// <summary>
+        /// Einen neuen Druckerhandler registrieren
+        /// </summary>
+        /// <param name="printerHandler">Eine Handler Klasse welcher das IPrinterHandler Interface implementiert</param>
         public void RegisterHandler(IPrinterHandler printerHandler)
         {
             _printerHandlers[printerHandler.Type] = printerHandler;
         }
 
+        /// <summary>
+        /// Ein Fiktives Dokument wird gedruckt
+        /// </summary>
+        /// <param name="document">Das "Dokument" welches gedruckt werden soll</param>
+        /// <param name="type">Der Typ drucker welcher verwendet werden soll</param>
         public void Print(string document, PrinterType type)
         {
             if (_printerHandlers.ContainsKey(type))
@@ -35,6 +44,10 @@ namespace DelegationDesignPattern.Managers
             }
         }
 
+        /// <summary>
+        /// Abfrage aller registrierten Druckertypen
+        /// </summary>
+        /// <returns>Erlaubt das anzeigen der registierten Drucker</returns>
         public IEnumerable<PrinterType> GetRegisteredPrinterTypes()
         {
             return _printerHandlers.Keys;

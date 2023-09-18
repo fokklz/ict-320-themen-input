@@ -7,6 +7,9 @@ using DelegationDesignPattern.Common;
 
 namespace DelegationDesignPattern.Handlers
 {
+    /// <summary>
+    /// Handler für einen Laser Drucker
+    /// </summary>
     public class LaserPrinterHandler : IPrinterHandler
     {
         public PrinterType Type => PrinterType.Laser;
