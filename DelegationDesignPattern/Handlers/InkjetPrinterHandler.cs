@@ -16,7 +16,7 @@ namespace DelegationDesignPattern.Handlers
 
         public void Print(string document)
         {
-            Console.WriteLine($"Printing {document} using Inkjet printer");
+            Console.WriteLine($"Dokuemnt {document} wird mit dem Tintendrucker grdurckt");
         }
 
     }

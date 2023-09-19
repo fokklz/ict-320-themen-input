@@ -13,8 +13,8 @@ internal class Program
         printerManager.RegisterHandler(new LaserPrinterHandler());
 
         // Drucken von Dokumenten
-        printerManager.Print("Document1.pdf", PrinterType.Inkjet);
-        printerManager.Print("Document2.pdf", PrinterType.Laser);
+        printerManager.Print("Dokument1.pdf", PrinterType.Inkjet);
+        printerManager.Print("Dokument2.pdf", PrinterType.Laser);
 
         // Auflisten der verfügbaren Druckertypen
         Console.WriteLine("Verfügbare Druckertypen:");
