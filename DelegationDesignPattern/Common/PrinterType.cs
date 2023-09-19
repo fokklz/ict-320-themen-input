@@ -12,6 +12,7 @@ namespace DelegationDesignPattern.Common
     public enum PrinterType
     {
         Laser,
-        Inkjet
+        Inkjet,
+        Another // Unsupported
     }
 }
